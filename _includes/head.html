@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet"> 
+
+<link rel="shortcut icon" href="{{ '/img/favicon/favicon.ico' | prepend:site.url }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ '/img/favicon/apple-touch-icon.png' | prepend:site.url }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/img/favicon/favicon-32x32.png' | prepend:site.url }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ '/img/favicon/favicon-16x16.png' | prepend:site.url }}">
+<link rel="manifest" href="{{ '/img/favicon/site.webmanifest' | prepend:site.url }}">
+
+
+
+<link rel="stylesheet" href="{{ '/css/app.css' | prepend: site.url }}">
+
+{% seo title=false %}
