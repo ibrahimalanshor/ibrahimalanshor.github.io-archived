@@ -1,0 +1,20 @@
+*, *:before, *:after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: $body-bg;
+	font-family: $body-font;
+	line-height: $body-line;
+	font-size: $body-size;
+	color: $body-color;
+	padding: 1rem;
+}
+
+a{
+	color: $blue;
+	border: 0;
+	text-decoration: none;
+}
