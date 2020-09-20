@@ -118,7 +118,31 @@ Buat sebuah controller dengan perintah artisan.
 php artisan make:controller Admin/Auth/LoginController
 ```
 
-Lalu buat sebuah fungsi login di controller tersebut.
+Lalu buat sebuah `function construct` untuk mengatur middleware, dimana hanya *non-loged* admin yang hanya bisa mengakses method di controller ini, kecuali method `logout`.  
+
+```php
+public function __construct()
+{
+    $this->middleware('guest:admin', ['except' => 'logout']);
+}
+```
+
+
+
+Lalu buat beberepa method di controller tersebut.
+
+### Login Form Function
+
+```php
+public function showLoginForm()
+{
+    return view('admin.auth.login');
+}
+```
+
+
+
+### Login Function
 
 ```php
 use Auth;
@@ -139,6 +163,18 @@ public function login(Request $request)
 
 ```
 
+### Logout Function
+
+```php
+public function logout()
+{
+    Auth::guard('admin')->logout();
+    return redirect('/');
+}
+```
+
+
+
 ## Membuat Route Login Admin
 
 Lalu kita akan membuat route untuk login admin.
@@ -148,7 +184,7 @@ Buka file `routes/web.php`. Lalu tambahkan route untuk login admin.
 ```php
 use App\Http\Controllers\Admin\Auth\LoginController;
 
-Route::view('/admin/login', 'admin.auth.login');
+Route::get('/admin/login', [LoginController::class, 'showLoginForm']);
 Route::post('/admin/login', [LoginController::class, 'login'])->name('admin.login');
 ```
 
