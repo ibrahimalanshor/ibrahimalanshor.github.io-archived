@@ -4,7 +4,8 @@ title: Project
 permalink: /project/
 ---
 
-Tidak ada apa-apa disini, saya pengangguran banyak acara.
-
-
-[jekyll-organization]: https://github.com/jekyll
+<ul>
+{% for project in site.projects %}
+	<li><a href="{{ project.url }}">{{ project.title }}</a></li>
+{% endfor %}
+</ul>
