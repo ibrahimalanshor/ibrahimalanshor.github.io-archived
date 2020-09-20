@@ -33,6 +33,11 @@ permalink: /:title/
 sass:
   style: compressed
 
+collections:
+  projects:
+    output: true
+    permalink: /project/:path/
+
 # Build settings
 plugins:
   - jekyll-feed
