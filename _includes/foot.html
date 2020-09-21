@@ -7,3 +7,13 @@
 		</ul>
 	</div>
 </footer>
+
+<script src="{{ '/js/search.js' | prepend:site.url }}"></script>
+<script>
+	SimpleJekyllSearch({
+		searchInput: document.getElementById('search'),
+		resultsContainer: document.getElementById('result'),
+		searchResultTemplate: '<li><time>{date}</time><a href="{url}">{title}</a></li>',
+		json: '/search.json'
+	})
+</script>
