@@ -197,7 +197,7 @@ Buat sebuah file blade `login.php` di `resources/views/admin/auth`.
 Isi dengan form login seperti kode berikut.
 
 ```html
-<form method="POST" action="{{ route('admin.login') }}">
+<form method="POST" action="{% raw %}{{ route('admin.login') }}{% endraw %}">
     <h3>Admin Login</h3>
     <hr>
     @csrf
