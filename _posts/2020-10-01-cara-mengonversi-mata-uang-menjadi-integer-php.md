@@ -1,5 +1,5 @@
 ---
-title: Cara Mengonversikan Mata Uang Menjadi Integer PHP
+title: Cara Mengonversi Mata Uang Menjadi Integer PHP
 date: 2020-10-01 19:30:00 +0700
 layout: post
 categories: php
