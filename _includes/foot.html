@@ -13,7 +13,12 @@
 	SimpleJekyllSearch({
 		searchInput: document.getElementById('search'),
 		resultsContainer: document.getElementById('result'),
-		searchResultTemplate: '<li><time>{date}</time><a href="{url}">{title}</a></li>',
+		searchResultTemplate: `
+			<tr>
+				<td><time>{date} <span class="year">{year}</span></time></td>
+				<td><a href="{url}">{title}</a></td>
+			</tr>
+		`,
 		json: '/search.json'
 	})
 </script>

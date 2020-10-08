@@ -6,7 +6,8 @@
 
       "title"    : "{{ post.title }}",
       "url"      : "{{ site.url }}{{ post.url }}",
-      "date"     : "{{ post.date | date: "%d %B %Y" }}"
+      "date"     : "{{ post.date | date: "%d %B" }}",
+      "year"     : "{{ post.date | date: "%Y" }}"
 
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
