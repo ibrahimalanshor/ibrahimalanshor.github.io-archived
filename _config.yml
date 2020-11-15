@@ -37,6 +37,16 @@ collections:
   projects:
     output: true
     permalink: /project/:path/
+  category:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"
 
 # Build settings
 plugins:
