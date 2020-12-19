@@ -1,46 +1,49 @@
 ---
-title: Laravel 8 Restoran
+title: PDF Share
 layout: post
-img: laravel-restoran.png
+img: pdf-share.png
 ---
 
-![Laravel 8 Restoran]({{ site.url }}/img/laravel-restoran.png)
+![PDF Share]({{ site.url }}/img/pdf-share.png)
 
-Aplkasi restoran sederhana dibuat dengan Laravel 8.
+Share your pdf
 
 ## Fitur
 
 * Admin
 	* Auth
 	* Dashboard
-	* CRUD Menu, Meja, Kategori, User
-	* Site Setting
+	* Melihat dan menghapus PDF
+	* Melihat dan menghapus pengguna
+	* Pengaturan
 * User
 	* Auth
 	* Dashboard
-	* Membuat, menghapus, membayar, mencetak pesanan.
-	* Melihat meja
-	* Profile
+	* CRUD PDF
+	* Edit Profile
+* Guest
+	* Melihat dan mendownload PDF
+	* Melihar profil pengguna
 
 ## Dependencies
 
 * Laravel 8
-* Concept Master
-* Jquery
+* AdminLTE
 * Bootstrap
+* Jquery
 
-## Instalation
+## Instalasi
 
 Pertama clone repo ini.
 
 ```bash
-git clone https://github.com/ibrahimalanshor/laravel-8-restoran.git
+git clone https://github.com/ibrahimalanshor/pdf-share.git
 ```
 
 Masuk ke folder hasil clone.
 
 ```bash
-cd laravel-8-restoran
+cd pdf-share
 ```
 
 Salin `env.example` ke `env`. Sesuaikan konfigurasi database anda.

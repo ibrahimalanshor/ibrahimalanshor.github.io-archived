@@ -1,6 +1,7 @@
 ---
 title: Laravel 8 Inventaris
 layout: post
+img: laravel-inventaris.png
 ---
 
 ![Laravel 8 Inventaris]({{ site.url }}/img/laravel-inventaris.png)

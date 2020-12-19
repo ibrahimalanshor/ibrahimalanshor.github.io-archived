@@ -1,6 +1,7 @@
 ---
 title: Laravel 8 Simple Blog
 layout: post
+img: laravel-simple-blog.png
 ---
 
 ![Laravel 8 Simple Blog]({{ site.url }}/img/laravel-simple-blog.png)

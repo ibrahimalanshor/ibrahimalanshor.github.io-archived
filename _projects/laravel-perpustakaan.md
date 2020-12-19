@@ -1,6 +1,7 @@
 ---
 title: Laravel 8 Perpustakaan
 layout: post
+img: laravel-perpustakaan.png
 ---
 
 ![Laravel 8 Perpustakaan]({{ site.url }}/img/laravel-perpustakaan.png)

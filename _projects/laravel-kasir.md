@@ -1,6 +1,7 @@
 ---
 title: Laravel 8 Kasir
 layout: post
+img: laravel-kasir.png
 ---
 
 ![Laravel 8 Kasir]({{ site.url }}/img/laravel-kasir.png)
