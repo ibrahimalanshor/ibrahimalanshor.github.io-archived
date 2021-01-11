@@ -102,10 +102,12 @@
     <div class="d-flex works py-sm flex-wrap">
       {% for project in site.projects %}
         <div class="item w-quarter p-sm">
-          <div class="work">
-            <img src="{{ site.url }}/img/{{ project.img }}" alt="">
-            <span class="bg-blue text-white project-title">{{ project.title }}</span>
-          </div>
+          <a href="{{ project.url }}">
+            <div class="work">
+              <img src="{{ site.url }}/img/{{ project.img }}" alt="">
+              <span class="bg-blue text-white project-title">{{ project.title }}</span>
+            </div>
+          </a>
         </div>
       {% endfor %}
     </div>
