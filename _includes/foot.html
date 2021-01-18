@@ -16,10 +16,10 @@
 		searchInput: document.getElementById('search'),
 		resultsContainer: document.getElementById('result'),
 		searchResultTemplate: `
-			<tr>
-				<td><time>{date} <span class="year">{year}</span></time></td>
-				<td><a href="{url}">{title}</a></td>
-			</tr>
+			<li>
+				<time>{date} <span class="year">{year}</span></time>
+				<a href="{url}">{title}</a>
+			</li>
 		`,
 		json: '/search.json'
 	})

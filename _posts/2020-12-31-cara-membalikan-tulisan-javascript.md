@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cara membalikan tulisan javascript
+title: Cara Membalikan Tulisan Di Javascript
 date: 2020-11-15 20:10:00 +0700
 categories: javascript
 ---
