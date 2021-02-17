@@ -37,7 +37,7 @@ Share your pdf
 Pertama clone repo ini.
 
 ```bash
-git clone https://github.com/ibrahimalanshor/pdf-share.git
+git clone https://github.com/ibrahimalanshor/laravel-pdf-share.git
 ```
 
 Masuk ke folder hasil clone.

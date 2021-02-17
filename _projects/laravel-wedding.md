@@ -39,7 +39,7 @@ Fitur sudah selesai, namun masih banyak serangga males mgodonf.
 Pertama clone repo ini.
 
 ```bash
-git clone https://github.com/ibrahimalanshor/wedding.git
+git clone https://github.com/ibrahimalanshor/laravel-wedding.git
 ```
 
 Masuk ke folder hasil clone.
