@@ -1,41 +1,145 @@
 ---
-layout: default
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-<header>
-	<h1>{{ site.title }}</h1>
-</header>
+  <meta charset="utf-8">
+  <title>Ibrahim Al Anshor</title>
+  <meta name="description" content="Information">
+  <meta name="author" content="Ibrahim Al Anshor">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="search">
-	<input type="text" id="search" placeholder="Cari Artikel">
-	<ul class="list" id="result"></ul>
-</div>
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display:700|Gothic+A1&display=swap" rel="stylesheet">
 
-{% for post in site.posts %}
-	
-	{% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-	{% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
-	
-		{% if forloop.first %}
-		<section>
-		<h2>{{ this_year }}</h2>
-		<ul class="list">
-		{% endif %}
-			<li>
-				<time>{{ post.date | date: "%d %B" }} <span class="year">{{ post.date | date: "%Y" }}</span></time>
-				<a href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
-			</li>
-		{% if forloop.last %}
-		</ul>
-		</section>
-		{% else %}
-		{% if this_year != next_year %}
-		</ul>
-		</section>
-		<section>
-		<h2>{{ next_year }}</h2>
-		<ul class="list">
-		{% endif %}
-		{% endif %}
+  <link rel="stylesheet" href="{{ '/css/moltar.css' | prepend: site.url }}">
+  <link rel="stylesheet" href="{{ '/css/portofolio.css' | prepend: site.url }}">
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  
+  <link rel="icon" type="image/png" href="{{ '/img/favicon/portofolio.ico' | prepend: site.url }}">
 
-{% endfor %}
+</head>
+<body>
+
+  <nav class="d-flex bg-white items-center justify-center">
+    <a href="https://facebook.com" class="text-black"><i class="px-sm icon ion-logo-facebook"></i></a>
+    <a href="https://github.com/ibrahimalanshor" class="text-black"><i class="px-sm icon ion-logo-github"></i></a>
+    <a href="https://youtube.com" class="text-black"><i class="px-sm icon ion-logo-youtube"></i></a>
+    <a href="https://instagram.com" class="text-black"><i class="px-sm icon ion-logo-instagram"></i></a>
+  </nav>
+  <header class="bg-black items-center d-flex text-white">
+  <div class="blend"></div>
+  <div class="header w-full">
+    <div class="container-lg">
+    <div class="d-flex">
+      <div class="heading w-half">
+        <h1 class="title">Ibrahim Al Anshor</h1>
+        <p>
+          I am a young developer, living hard, always thinking before I do, never leaving friends, and holding fast to the truth.
+        </p>
+      </div>
+    </div>
+    </div>
+  </div>
+  </header>
+
+  <section class="py-lg about">
+  <div class="container-lg">
+    <div class="d-flex">
+      <div class="aboutme item w-half border-bottom d-flex items-center">
+        <div>
+          <h2 class="title">Who Am I</h2>
+          <p>
+            I'm ibrahim al anshor, a man full of twists and turns. Having a dream of becoming a programmer or developer. From now on I have started to study and try to achieve that dream by continuing to be prejudiced to friends
+          </p>
+        </div>
+      </div>
+      <div class="item featured w-half d-flex items-center">
+        <img src="{{ '/img/mic.jpg' | prepend: site.url }}" alt="">
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section class="py-lg">
+  <div class="container-lg">
+    <h2 class="title">My Service</h2>
+    <div class="d-flex service">
+      <div class="item px-sm py-lg d-flex">
+        <i class="icon w-half ion-ios-construct text-center"></i>
+        <div class="meta w-half px-sm">
+          <h4 class="border-bottom">Web Development</h4>
+          <p>
+          	I can create websites, with all my abilities, websites are my life, website creation is like food for me
+          </p>
+        </div>
+      </div>
+      <div class="item px-sm py-lg d-flex">
+        <i class="icon ion-ios-cube text-center"></i>
+        <div class="meta px-sm">
+          <h4 class="border-bottom">Wordpress</h4>
+          <p>
+          	Wordpress is a part of my life, making wordpress is a joy for me
+          </p>
+        </div>
+      </div>
+      <div class="item px-sm py-lg d-flex">
+        <i class="icon ion-ios-paper text-center"></i>
+        <div class="meta px-sm">
+          <h4 class="border-bottom">Article Creator</h4>
+          <p>
+          	Making articles is not an easy thing, it requires accuracy and efficiency, I am the right person for that
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section class="py-lg">
+  <div class="container-lg">
+    <h2 class="title">My Work</h2>
+    <div class="d-flex works py-sm flex-wrap">
+      {% for project in site.projects %}
+        <div class="item w-quarter p-sm">
+          <a href="{{ project.url }}">
+            <div class="work">
+              <img src="{{ site.url }}/img/{{ project.img }}" alt="">
+              <span class="bg-blue text-white project-title">{{ project.title }}</span>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  </section>
+
+  <section class="bg-black text-white py-lg" id="contact">
+  <div class="container-lg">
+    <div class="contact d-flex">
+      <div class="w-half item">
+        <h2 class="title">Contact Me If You Interest</h2>
+        <p>
+          I will repeat as quick as i can
+        </p>
+      </div>
+      <div class="w-half item">
+        <ul class="p-none m-none" style="list-style: none;">
+          <li><i class="icon ion-ios-call"></i> 082236654884</li>
+          <li><i class="icon ion-ios-mail"></i> ibrahimalanshor6@gmail.com</li>
+          <li><i class="icon ion-ios-home"></i> Banjarnegara, Indonesia</li>
+          <li><i class="icon ion-ios-laptop"></i> ibrahimalanshor.github.io</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <footer class="py-md">
+  <div class="container-lg">
+    <a href=""><small>Ibrahim Al Anshor - &copy; 2018</small></a>
+  </div>
+  </footer>
+
+</body>
+</html>
