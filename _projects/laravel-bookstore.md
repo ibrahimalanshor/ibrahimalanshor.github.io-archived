@@ -51,7 +51,7 @@ git clone https://github.com/ibrahimalanshor/laravel-bookstore.git
 Masuk ke folder hasil clone.
 
 ```bash
-cd wedding
+cd laravel-bookstore
 ```
 
 Salin `env.example` ke `env`. Sesuaikan konfigurasi database anda.

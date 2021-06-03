@@ -45,7 +45,7 @@ git clone https://github.com/ibrahimalanshor/laravel-wedding.git
 Masuk ke folder hasil clone.
 
 ```bash
-cd wedding
+cd laravel-wedding
 ```
 
 Salin `env.example` ke `env`. Sesuaikan konfigurasi database anda.

@@ -34,13 +34,13 @@ Laundry dibuat dengan Laravel 8.
 Pertama clone repo ini.
 
 ```bash
-git clone https://github.com/ibrahimalanshor/laravel-8-laundry.git
+git clone https://github.com/ibrahimalanshor/laravel-laundry.git
 ```
 
 Masuk ke folder hasil clone.
 
 ```bash
-cd laravel-8-laundry
+cd laravel-laundry
 ```
 
 Salin `env.example` ke `env`. Sesuaikan konfigurasi database anda.

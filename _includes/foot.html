@@ -1,26 +1,7 @@
 <footer>
 	<div class="container">
 		<ul>
-			<li><a href="{{ '/' | prepend:site.url }}">Blog</a></li>
-			<li><a href="{{ '/categories' | prepend:site.url }}">Category</a></li>
-			<li><a href="{{ '/about' | prepend:site.url }}">About</a></li>
-			<li><a href="{{ '/project' | prepend:site.url }}">Project</a></li>
-			<li><a href="{{ '/portofolio' | prepend:site.url }}">Portofolio</a></li>
+			<li><a href="{{ '/' | prepend:site.url }}">Portofolio</a></li>
 		</ul>
 	</div>
 </footer>
-
-<script src="{{ '/js/search.js' | prepend:site.url }}"></script>
-<script>
-	SimpleJekyllSearch({
-		searchInput: document.getElementById('search'),
-		resultsContainer: document.getElementById('result'),
-		searchResultTemplate: `
-			<li>
-				<time>{date} <span class="year">{year}</span></time>
-				<a href="{url}">{title}</a>
-			</li>
-		`,
-		json: '/search.json'
-	})
-</script>

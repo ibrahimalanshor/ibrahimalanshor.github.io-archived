@@ -43,7 +43,7 @@ git clone https://github.com/ibrahimalanshor/laravel-pdf-share.git
 Masuk ke folder hasil clone.
 
 ```bash
-cd pdf-share
+cd laravel-pdf-share
 ```
 
 Salin `env.example` ke `env`. Sesuaikan konfigurasi database anda.
