@@ -70,7 +70,7 @@
         <div class="meta w-half px-sm">
           <h4 class="border-bottom">Web Development</h4>
           <p>
-          	I can develop a website, i`m experienced in that field
+          	I can develop a website
           </p>
         </div>
       </div>
@@ -79,7 +79,7 @@
         <div class="meta px-sm">
           <h4 class="border-bottom">Wordpress</h4>
           <p>
-            I can develop a wordpress site, it's ingrained
+            I can develop a wordpress site
           </p>
         </div>
       </div>
@@ -88,7 +88,7 @@
         <div class="meta px-sm">
           <h4 class="border-bottom">Article Creator</h4>
           <p>
-            I can write articles, i`ve writen a lot
+            I can write articles
           </p>
         </div>
       </div>
@@ -106,6 +106,26 @@
             <div class="work">
               <img src="{{ site.url }}/img/{{ project.img }}" alt="">
               <span class="bg-blue text-white project-title">{{ project.title }}</span>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+
+    <hr>
+  </div>
+  </section>
+
+  <section class="py-lg">
+  <div class="container-lg">
+    <h2 class="title">Experiment</h2>
+    <div class="d-flex works py-sm flex-wrap">
+      {% for experiment in site.experiment %}
+        <div class="item w-quarter p-sm">
+          <a href="{{ experiment.uri }}">
+            <div class="work">
+              <img src="{{ site.url }}/img/{{ experiment.img }}" alt="">
+              <span class="bg-blue text-white project-title">{{ experiment.title }}</span>
             </div>
           </a>
         </div>

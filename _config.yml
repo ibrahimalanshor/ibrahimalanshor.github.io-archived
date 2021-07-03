@@ -37,17 +37,9 @@ collections:
   projects:
     output: true
     permalink: /project/:path/
-  category:
-    output: true
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: category
-    values:
-      layout: "category"
-
+  experiment:
+    output: false
+    
 # Build settings
 plugins:
   - jekyll-feed
