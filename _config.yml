@@ -23,7 +23,7 @@ email: ibrahimalanshor6.com
 description: >- # this means to ignore newlines until "baseurl:"
   Seorang pemrogram dan pengembang situs web yang andal. Berpengalaman dalam mengembangkan situs web dan aplikasi. Memiliki kemampuan dalam menyelesaikan masalah secara cepat, tepat, dan efektif. Selalu berfikir kritis, dan mampu belajar mandiri.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://ibrahimalanshor.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ibrahimalanshor.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  ibrahimalanshor
 
 # Build settings
