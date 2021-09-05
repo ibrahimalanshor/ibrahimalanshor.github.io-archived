@@ -1,0 +1,14 @@
+---
+title: Produk
+layout: page
+---
+
+<div class="items">
+  {% for product in site.products %}
+    <div class="item">
+      <img src="{{ product.img | prepend: '/img/' | prepend: site.baseurl }}" alt="{{ product.title }}">
+      <a href="{{ product.url }}">{{ product.title }}</a>
+      <time>{{ product.date | date: '%d %b %Y' }}</time>
+    </div>
+  {% endfor %}
+</div>

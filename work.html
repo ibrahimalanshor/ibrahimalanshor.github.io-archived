@@ -1,0 +1,14 @@
+---
+title: Karya
+layout: page
+---
+
+<div class="items">
+  {% for work in site.works %}
+    <div class="item">
+      <img src="{{ work.img | prepend: '/img/' | prepend: site.baseurl }}" alt="{{ work.title }}">
+      <a href="{{ work.uri }}">{{ work.title }}</a>
+      <time>{{ work.date | date: '%d %b %Y' }}</time>
+    </div>
+  {% endfor %}
+</div>

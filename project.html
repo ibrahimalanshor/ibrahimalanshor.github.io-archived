@@ -1,0 +1,14 @@
+---
+title: Proyek
+layout: page
+---
+
+<div class="items">
+  {% for project in site.projects %}
+    <div class="item">
+      <img src="{{ project.img | prepend: '/img/' | prepend: site.baseurl }}"  alt="{{ project.title }}">
+      <a href="{{ project.url }}">{{ project.title }}</a>
+      <time>{{ project.date | date: '%d %b %Y' }}</time>
+    </div>
+  {% endfor %}
+</div>
