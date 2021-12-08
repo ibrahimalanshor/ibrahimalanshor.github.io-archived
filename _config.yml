@@ -5,7 +5,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Berpengalaman dalam mengembangkan situs web dan aplikasi.
 tagline: "Pemrogram dan Pengembang Situs Web"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.ibrahimalanshor.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ibrahimalanshor
 github_username:  ibrahimalanshor
 
