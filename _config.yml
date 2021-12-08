@@ -19,3 +19,6 @@ plugins:
 collections:
   projects:
     sort_by: type
+
+webmaster_verifications:
+  google: uQGWsE1AvnXlD-gvyTzOv7sMh7vZH7pSuZctArIi3Ws
