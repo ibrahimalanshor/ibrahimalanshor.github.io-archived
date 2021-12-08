@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+<header>
+  <h1>{{ site.title }}</h1>
+  <p>{{ site.description }}</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="/about">Tentang</a></li>
+    <li><a href="/projects">Proyek</a></li>
+  </ul>
+</nav>
+
+<main class="home">
+  <ol>
+    {% for post in site.posts %}
+
+      {% capture year_of_current_post %}
+        {{ post.date | date: "%Y" }}
+      {% endcapture %}
+
+      {% capture year_of_previous_post %}
+        {{ post.previous.date | date: "%Y" }}
+      {% endcapture %}
+
+      {% if forloop.first %}
+        <li class="year-list">
+          <h2>{{ year_of_current_post }}</h2>
+          <ol class="article-list">
+      {% endif %}
+
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <time>{{ post.date | date: "%d %b" }}</time>
+      </li>
+
+      {% if forloop.last %}
+        </ol>
+      </li>
+      {% else %}
+        {% if year_of_current_post != year_of_previous_post %}
+            </ol>
+          </li>
+
+          <li class="year-list">
+            <h2>{{ year_of_previous_post }}</h2>
+            <ol class="article-list">
+        {% endif %}
+      {% endif %}
+
+    {% endfor %}
+  </ol>
+</main>

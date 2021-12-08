@@ -1,0 +1,21 @@
+title: Ibrahim Al Anshor
+email: ibrahimalanshor@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Seorang pemrogram dan pengembang situs web yang andal.
+  Berpengalaman dalam mengembangkan situs web dan aplikasi.
+tagline: "Pemrogram dan Pengembang Situs Web"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: ibrahimalanshor
+github_username:  ibrahimalanshor
+
+permalink: /:title
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+collections:
+  projects:
+    sort_by: type
