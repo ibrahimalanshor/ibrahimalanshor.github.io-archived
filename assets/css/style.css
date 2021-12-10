@@ -104,16 +104,21 @@ article {
   padding: 2rem 0;
   border-bottom: 1px solid #eee;
 }
-article p, article .meta, article h1, article h2, article h3, article pre, article ul, article blockquote, article img, article table {
+article p, article .meta, article h1, article h2, article h3, article pre, article ul, article ol, article blockquote, article img, article table {
   margin-bottom: 1rem;
 }
 article h2, article h3 {
   margin-top: 2rem;
 }
-article ul {
+article ul, article ol {
   padding-left: 1rem;
   margin-left: 1rem;
+}
+article ul {
   list-style: disc;
+}
+article ol {
+  list-style: decimal;
 }
 article img {
   border-radius: 0.25rem;
