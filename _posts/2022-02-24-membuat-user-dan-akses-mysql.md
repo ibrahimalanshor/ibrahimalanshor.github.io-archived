@@ -33,7 +33,7 @@ GRANT hak_akses ON nama_database.nama_tabel TO 'nama_user'@'lokasi_user';
 Contoh
 
 ```sql
-GRANT ALL ON *.* TO 'ibrahimalanshor'@'ibrapwd';
+GRANT ALL ON *.* TO 'ibrahimalanshor'@'localhost';
 ```
 
 * `ALL` berarti memberikan semua hak akses, bisa diganti SELECT, INSERT, UPDATE, dan query lainnya.
