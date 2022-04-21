@@ -11,6 +11,8 @@ permalink: /skill/
 * PHP
 * Codeigniter, Laravel
 * Node JS
-* Express JS
+* Express JS, Feathers JS
+* Socket
 * MySQL, MongoDB
 * Linux (Basic)
+* Rest API, Open API (Basic)
