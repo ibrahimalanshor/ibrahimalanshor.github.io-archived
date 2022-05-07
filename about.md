@@ -4,12 +4,24 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Seorang pemrogam yang senantiasa belajar hal baru, menghadapi galat dengan tenang dan solutif, dan berpegang teguh pada pola desain dan praktek terbaik.
 
-### More Information
+## Skill
 
-A place to include any other types of information that you'd like to include about yourself.
+- HTML, CSS
+- Bootstrap, Bulma Tailwind CSS
+- Javascript
+- Vue JS
+- PHP
+- Codeigniter, Laravel
+- MySQL
+- Node JS
+- Express JS, Feather JS
+- MongoDB
+- Docker (Basic)
+- Linux (Basic)
+- Rest API
 
-### Contact me
+## Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[ibrahimalanshor6@gmail.com](mailto:ibrahimalanshor6@gmail.com)
