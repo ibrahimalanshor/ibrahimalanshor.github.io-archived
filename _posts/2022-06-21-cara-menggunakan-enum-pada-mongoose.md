@@ -2,7 +2,7 @@
 layout: post
 title: "Cara Menggunakan Enum Pada Mongoose"
 tags: [mongoose, mongodb]
-data: 2022-06-21 09:00:00 +0700
+date: 2022-06-21 09:00:00 +0700
 ---
 
 Enum pada database umumnya digunakan untuk memberikan tipe data khusus pada kolom yang nilainya sudah ditentukan sebelumnya yang berupa sekumpulan konstanta.

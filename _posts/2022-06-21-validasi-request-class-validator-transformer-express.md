@@ -2,7 +2,7 @@
 layout: post
 title: "Validasi Request Dengan Class Validator dan Class Transformer Express Typescript"
 tags: [typescript, express]
-data: 2022-06-21 10:10:00 +0700
+date: 2022-06-21 10:10:00 +0700
 ---
 
 Class Validator dan Class Transformer adalah library yang dapat anda gunakan untuk melakukan validasi pada request express.

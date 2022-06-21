@@ -2,7 +2,7 @@
 layout: post
 title: "Cara Cek Apakah Sebuah Key Ada di Sebuah Objek Javascript"
 tags: [javascript]
-data: 2022-06-15 16:00:00 +0700
+date: 2022-06-15 16:00:00 +0700
 ---
 
 Untuk mengecek apakah sebuah key ada di sebuah objek javascript, gunakan operator `in`.

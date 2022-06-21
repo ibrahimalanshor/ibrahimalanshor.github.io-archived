@@ -2,7 +2,7 @@
 layout: post
 title: "Setup Eslint Prettier Husky dan Lint Staged"
 tags: [setup]
-data: 2022-05-07 11:00:00 +0700
+date: 2022-05-07 11:00:00 +0700
 ---
 
 Eslint Prettier Husky dan Lint Staged membantu programmer untuk menciptakan kode javascript yang konsisten dan sesuai aturan dengan mudah secara otomatis.

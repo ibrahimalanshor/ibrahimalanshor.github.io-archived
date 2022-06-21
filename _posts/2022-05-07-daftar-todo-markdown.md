@@ -2,7 +2,7 @@
 layout: post
 title: "Cara Membuat Daftar Todo dengan Markdown"
 tags: [todo, markdown]
-data: 2022-05-07 10:00:00 +0700
+date: 2022-05-07 10:00:00 +0700
 ---
 
 Daftar Todo adalah daftar kegiatan, pekerjaan, atau aktifitas yang akan dilakukan di lain waktu seperti nanti malam, besok, minggu depan, dsb.

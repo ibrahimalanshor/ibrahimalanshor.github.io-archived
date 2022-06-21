@@ -2,7 +2,7 @@
 layout: post
 title: "xdg-open Linux"
 tags: [linux]
-data: 2022-05-22 19:00:00 +0700
+date: 2022-05-22 19:00:00 +0700
 ---
 
 xdg-open merupakan salah satu tool yang didapatkan dari xdg-utils.

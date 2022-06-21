@@ -2,7 +2,7 @@
 layout: post
 title: "Cara Mengatur DNS Nameserver Ubuntu"
 tags: [dns, linux, ubuntu]
-data: 2022-05-04 12:00:00 +0700
+date: 2022-05-04 12:00:00 +0700
 ---
 
 DNS adalah sebuah sistem yang menyimpan informasi data domain dalam jaringan. DNS akan mencari alamat IP dari domain yang kita minta.

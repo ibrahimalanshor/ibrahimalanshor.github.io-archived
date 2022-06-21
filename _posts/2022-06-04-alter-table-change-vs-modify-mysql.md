@@ -2,7 +2,7 @@
 layout: post
 title: "Alter Table: Change vs Modify Column MySQL"
 tags: [mysql, database]
-data: 2022-06-04 14:00:00 +0700
+date: 2022-06-04 14:00:00 +0700
 ---
 
 Untuk mengubah kolom pada tabel MySQL yang sudah terlanjur dibuat, saya biasanya menggunakan perintah alter table `CHANGE` atau `MODIFY`.

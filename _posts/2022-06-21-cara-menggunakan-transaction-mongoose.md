@@ -2,7 +2,7 @@
 layout: post
 title: "Cara Menggunakan Transaction Pada Mongoose"
 tags: [mongoose, mongodb]
-data: 2022-06-21 09:30:00 +0700
+date: 2022-06-21 09:30:00 +0700
 ---
 
 Transaction adalah cara untuk menangani beberapa proses operasi database dalam satu proses. Sehingga jika ada satu proses yang bermasalah atau gagal, proses yang lainnya akan digagalkan atau dikembalikan seperti semula.
