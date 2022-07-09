@@ -1,8 +1,9 @@
 ---
 title: "Demo Landing Page"
-type: "Landing Page"
 layout: "post"
 date: 2022-04-21
+image: '/images/projects/demo.png'
+star: 8
 ---
 
 Demo - Static Landing Page

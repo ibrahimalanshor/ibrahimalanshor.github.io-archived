@@ -29,8 +29,8 @@ navigation:
     url: /tags
   - name: Archive
     url: /archive
-  - name: Project
-    url: /project
+  - name: Portofolio
+    url: /portofolio
 
 # Pagination
 paginate: 5

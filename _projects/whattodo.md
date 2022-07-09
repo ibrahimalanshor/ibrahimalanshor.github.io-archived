@@ -1,8 +1,9 @@
 ---
 title: "What To Do"
-type: "Web App"
 layout: "post"
 date: 2022-06-13
+image: '/images/projects/todo-mevn/home.png'
+star: 3
 ---
 
 What To Do - Todo Application with express and vue.

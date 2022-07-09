@@ -1,0 +1,12 @@
+---
+layout: page
+title: Portofolio
+permalink: /portofolio/
+---
+
+{% assign projects = site.projects | sort: "star" %}
+{% for project in projects %}
+  <h2><a style="color: inherit;" href="{{ project.url }}">{{ project.title }}</a></h2>
+  <img src="{{ project.image }}" alt="">
+  <hr>
+{% endfor %}
