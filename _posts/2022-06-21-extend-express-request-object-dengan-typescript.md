@@ -33,6 +33,18 @@ mkdir @types/express
 touch @types/express/index.d.ts
 ```
 
+Tambahkan kode berikut pada file `index.d.ts`.
+
+```ts
+declare global {
+  namespace Express {
+    interface Request {
+      user?: any;
+    }
+  }
+}
+```
+
 Buka file `tsconfig.json`, tambahkan folder `@types` pada properti `typeRoots`.
 
 ```json
