@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class="text-neutral-800 dark:bg-neutral-900 dark:text-neutral-200">
+
+  <div class="max-w-screen-md mx-auto my-8 px-4 lg:px-0">
+    
+    {{ partial "navbar.html" . }}
+
+    <div class="flex flex-wrap">
+      
+      {{ partial "sidebar.html" . }}
+
+      <main class="w-full md:w-5/6 py-5 md:p-5">
+
+        {{ block "main" . }}{{ end }}
+
+      </main>
+
+    </div>
+
+  </div>
+
+  {{ partial "foot.html" . }}
+
+  {{ block "script" . }}{{ end }}
+
+</body>
+</html>

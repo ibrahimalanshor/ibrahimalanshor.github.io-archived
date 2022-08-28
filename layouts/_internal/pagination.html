@@ -1,0 +1,17 @@
+{{ if gt .TotalPages 1 }}
+  <nav class="flex items-center justify-between">
+    {{ $current := .PageNumber }}
+
+    {{ if .HasPrev }}
+      <a href="{{ .Prev.URL }}" class="hover:underline">Prev</a>
+    {{ end }}
+    <div class="flex space-x-4">
+      {{ range .Pagers }}
+        <a href="{{ .URL }}" class="hover:underline text-neutral-900 dark:text-white {{ if eq .PageNumber $current }}font-bold{{ end }}">{{ .PageNumber }}</a>
+      {{ end }}
+    </div>
+    {{ if .HasNext }}
+      <a href="{{ .Next.URL }}" class="hover:underline">Next</a>
+    {{ end }}
+  </nav>
+{{ end }}

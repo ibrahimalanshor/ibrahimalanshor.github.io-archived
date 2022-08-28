@@ -1,0 +1,18 @@
+<aside id="menu" class="flex-shrink-0 w-full md:w-1/6 py-5 space-y-6 border-b md:border-b-0 md:border-r border-neutral-200 dark:border-neutral-700 hidden md:block">
+  {{ $active := .RelPermalink }}
+  {{ range .Site.Menus }}
+    <ul class="space-y-2">
+      {{ range . }}
+        <li>
+          {{ if and (eq $active .URL) .Title }}
+            <h1>
+              <a href="{{ .URL }}" class="font-bold text-neutral-900 dark:text-white hover:underline" href="index.html">{{ .Name }}</a>
+            </h1>
+          {{ else }}
+            <a href="{{ .URL }}" class="{{ if eq $active .URL }}font-bold{{ end }} text-neutral-900 dark:text-white hover:underline" href="index.html">{{ .Name }}</a>
+          {{ end }}
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+</aside>

@@ -1,0 +1,38 @@
+{{ define "main" }}
+  <h1 class="font-bold text-neutral-900 dark:text-white text-3xl mb-2">{{ .Title }}</h1>
+
+  <div class="space-y-6">
+    <input type="text" id="search" placeholder="Search Something" class="w-full bg-neutral-100 rounded px-3 pt-2 pb-1 leading-0 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-neutral-900 dark:bg-neutral-800 dark:focus:ring-neutral-100 dark:placeholder-neutral-500 mb-1" autofocus>
+
+    <hr class="border-neutral-200 dark:border-neutral-700 my-4">
+
+    <div class="space-y-6" id="result"></div>
+  </div>
+{{ end }}
+
+{{ define "script" }}
+<script>
+const store = [{{ range .Site.RegularPages }}{title:{{ .Title }},link:{{ .Permalink }},summary:{{ .Summary }}},{{ end }}]
+const searchEl = document.querySelector('#search')
+const resultEl = document.querySelector('#result')
+
+function generatePost(post) {
+  return `
+    <article class="border-b border-neutral-200 dark:border-neutral-700 pb-5">
+      <h2 class="font-bold text-neutral-900 dark:text-white text-2xl mb-2">
+        <a href="${post.link}" class="hover:underline">
+          ${post.title}
+        </a>
+      </h2>
+      <p class="leading-relaxed mb-2">${post.summary}</p>
+    </article>
+  `
+}
+
+searchEl.addEventListener('input', e => {
+  const result = store.filter(post => post.title.toLowerCase().indexOf(e.target.value) !== -1).map(post => generatePost(post)).join('')
+
+  resultEl.innerHTML = result
+})
+</script>
+{{ end }}

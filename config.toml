@@ -1,0 +1,66 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Ibrahim Al Anshor'
+summaryLength = 1
+enableRobotsTXT = true
+
+[taxonomies]
+  tag = 'tags'
+
+[permalinks]
+  blog = '/:title'
+
+[markup.highlight]
+  noClasses = false
+
+[params]
+  description = 'Web Developer'
+
+[menu]
+  [[menu.first]]
+    title = true
+    key = 'blog'
+    name = 'Blog'
+    url = '/'
+  [[menu.first]]
+    title = true
+    key = 'tag'
+    name = 'Tags'
+    url = '/tags/'
+  [[menu.first]]
+    title = true
+    key = 'error'
+    name = 'Error'
+    url = '/error/'
+  [[menu.first]]
+    title = true
+    key = 'snippet'
+    name = 'Snippet'
+    url = '/snippet/'
+  [[menu.first]]
+    title = true
+    key = 'lab'
+    name = 'Labs'
+    url = '/lab/'
+  [[menu.first]]
+    title = true
+    key = 'project'
+    name = 'Project'
+    url = '/project/'
+  [[menu.first]]
+    title = true
+    key = 'experience'
+    name = 'Experience'
+    url = '/experience/'
+  [[menu.last]]
+    key = 'about'
+    name = 'About'
+    url = '/about/'
+  [[menu.last]]
+    key = 'contact'
+    name = 'Contact'
+    url = '/contact/'
+  [[menu.last]]
+    key = 'github'
+    name = 'Github'
+    url = 'https://github.com/ibrahimalanshor'
