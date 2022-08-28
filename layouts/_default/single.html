@@ -9,8 +9,8 @@
           {{ if .Params.tags }}
             {{ range .Params.tags }}
               <a href="/tags/{{ . }}" class="text-neutral-900 dark:text-white underline">{{ . }}</a>
-            <span>-</span>
             {{ end }}
+            <span>-</span>
           {{ end }}
           {{ if .Date }}
             <time>{{ .Date.Format "2 January 2006" }}</time>
