@@ -18,8 +18,9 @@
             {{ end }}
             <time>{{ .Date.Format "2 January 2006" }}</time>
           </div>
-          <p class="leading-relaxed mb-2">{{ .Summary }}</p>
-          <a href="{{ .Permalink }}" class="text-neutral-900 dark:text-white underline">Read More</a>
+          <div class="prose prose-pre:m-0 mb-2">
+            {{ .Content }}
+          </div>
         </article>
       {{ end }}
       
