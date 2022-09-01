@@ -3,7 +3,7 @@ title: "What To Do"
 layout: "post"
 date: 2022-06-13
 images: ['/images/projects/todo-mevn/home.png']
-star: 3
+star: 1.5
 ---
 
 What To Do - Todo Application with express and vue.
