@@ -1,5 +1,5 @@
 ---
-title: 'Mengatur Header Accept-Language Secara Global Berdasarkan Bahasa Browser User'
+title: 'Mengatur Header Accept-Language Axios Secara Global Berdasarkan Bahasa Browser User'
 date: 2022-09-01 20:00:00 +0700
 ---
 
