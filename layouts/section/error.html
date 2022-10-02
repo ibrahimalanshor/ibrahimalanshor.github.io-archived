@@ -1,0 +1,32 @@
+{{ define "main" }}
+  <div class="space-y-6 mb-6">
+    {{ if gt (len .RegularPages) 0 }}
+      {{ $paginator := (.Paginate .RegularPages 5)}}
+      {{ range $paginator.Pages }}
+        <article class="border-b border-neutral-200 dark:border-neutral-700 pb-5">
+          <h2 class="font-bold text-neutral-900 dark:text-white text-2xl mb-2">
+            <a href="{{ .Permalink }}" class="hover:underline">
+              {{ .Title }}
+            </a>
+          </h2>
+          <div class="flex items-center space-x-2 mb-2 text-neutral-700 dark:text-neutral-300">
+            {{ if .Params.tags }}
+              {{ range .Params.tags }}
+                <a href="/tags/{{ . }}" class="text-neutral-900 dark:text-white underline">{{ . }}</a>
+              {{ end }}
+              <span>-</span>
+            {{ end }}
+            <time>{{ .Date.Format "2 January 2006" }}</time>
+          </div>
+          <div class="prose prose-pre:m-0 mb-2">
+            {{ .Content }}
+          </div>
+        </article>
+      {{ end }}
+      
+      {{ template "_internal/pagination.html" $paginator }}
+    {{ else }}
+      <p>Belum ada data</p>
+    {{ end }}
+  </div>
+{{ end }}
