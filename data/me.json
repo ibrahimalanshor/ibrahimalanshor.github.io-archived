@@ -1,0 +1,21 @@
+{
+    "name": "Ibrahim Al-Anshor",
+    "description": "Just another common programmer here, nothing too special. I like to code in my spare time and build cool things.",
+    "links": [
+        {
+            "label": "Email",
+            "title": "ibrahimalanshor6@gmail.com",
+            "url": "mailto:ibrahimalanshor6@gmail.com"
+        },
+        {
+            "label": "Github",
+            "title": "ibrahimalanshor",
+            "url": "https://github.com/ibrahimalanshor"
+        },
+        {
+            "label": "Youtube",
+            "title": "My Youtube Channel",
+            "url": "https://www.youtube.com/channel/UChfj-GPuMFSl_FtSyHwun5w"
+        }
+    ]
+}

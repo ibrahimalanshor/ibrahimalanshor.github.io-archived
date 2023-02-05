@@ -1,0 +1,34 @@
+{{ define "main" }}
+<main class="prose prose-neutral mx-auto my-8 px-4 md:px-0 sm:my-20">
+    <h1>{{ .Site.Data.me.name }}</h1>
+    <p class="lead">{{ .Site.Data.me.description }}</p>
+    <ul>
+        {{ range .Site.Data.me.links }}
+            <li>
+                {{ .label }}: <a href="{{ .url }}">{{ .title }}</a>
+            </li>
+        {{ end }}
+    </ul>
+    <hr>
+    {{ if len (where .Site.RegularPages "Section" "projects") }}
+        <h2>Projects</h2>
+        <ul>
+            {{ range (where .Site.RegularPages "Section" "projects") }}
+                <li>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </li>
+            {{ end }}
+        </ul>
+        <hr>
+    {{ end }}
+    <h2>Blogs</h2>
+    <ul>
+        {{ range (where .Site.RegularPages "Section" "blogs") }}
+            <li>
+                <a class="block" href="{{ .Permalink }}">{{ .Title }}</a>
+                <small>{{ .Date.Format "2 January 2006" }}</small>
+            </li>
+        {{ end }}
+    </ul>
+</main>
+{{ end }}

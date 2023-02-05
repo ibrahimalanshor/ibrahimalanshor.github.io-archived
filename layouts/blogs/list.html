@@ -1,0 +1,14 @@
+{{ define "main" }}
+<a href="{{ .Site.BaseURL }}" class="block p-4">Home</a>
+<main class="prose prose-neutral mx-auto my-8 px-4 md:px-0 sm:my-20">
+    <h2>Blogs</h2>
+    <ul>
+        {{ range .RegularPages }}
+            <li>
+                <a class="block" href="{{ .Permalink }}">{{ .Title }}</a>
+                <small>{{ .Date.Format "2 January 2006" }}</small>
+            </li>
+        {{ end }}
+    </ul>
+</main>
+{{ end }}
