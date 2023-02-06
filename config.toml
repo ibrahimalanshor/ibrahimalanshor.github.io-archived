@@ -1,3 +1,10 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
+enableRobotsTXT = true
+
+disableKinds = ['taxonomy', 'term']
+
+[permalinks]
+  blogs = '/:title'
+  projects = '/projects/:title'

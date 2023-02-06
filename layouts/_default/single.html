@@ -1,8 +1,8 @@
 {{ define "main" }}
 <a href="{{ .Site.BaseURL }}" class="block p-4">Home</a>
-<main class="prose prose-neutral mx-auto my-8 px-4 md:px-0 sm:my-20">
+<article class="prose prose-neutral mx-auto my-8 px-4 md:px-0 sm:my-20">
     <p>{{ .Date.Format "2 January 2006" }}</p>
     <h1>{{ .Title }}</h1>
     {{ .Content }}
-</main>
+</article>
 {{ end }}
