@@ -10,17 +10,15 @@
         {{ end }}
     </ul>
     <hr>
-    {{ if len (where .Site.RegularPages "Section" "projects") }}
-        <h2>Projects</h2>
-        <ul>
-            {{ range (where .Site.RegularPages "Section" "projects") }}
-                <li>
-                    <a href="{{ .Permalink }}">{{ .Title }}</a>
-                </li>
-            {{ end }}
-        </ul>
-        <hr>
-    {{ end }}
+    <h2>Projects</h2>
+    <ul>
+        {{ range (where .Site.RegularPages "Section" "projects") }}
+            <li>
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </li>
+        {{ end }}
+    </ul>
+    <hr>
     <h2>Blogs</h2>
     <ul>
         {{ range (where .Site.RegularPages "Section" "blogs") }}
