@@ -1,7 +1,7 @@
 ---
 title: Konfigurasi Import Alias di Vite
 date: 2023-03-28 17:00:00 +0700
-images: ['/images/blogs/husky-ignored/thumbnail.jpg']
+images: ['/images/blogs/vite-import-alias/thumbnail.jpg']
 ---
 
 Pernahkah anda menjumpai import file yang begitu panjang seperti kode di bawah ini?
