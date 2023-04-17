@@ -100,3 +100,9 @@ for (num of nums) {
 ```
 
 Saya biasanya menggunakan `parseInt` untuk mengambil karakter numerik pada string, yang mungkin terdapat karakter `non-numerik` juga seperti dari input user, sedangkan `Number` dan `unary plus` biasanya untuk mengonversi string yang numerik ke dalam bentuk `Number` dari string yang sudah pasti numerik seperti dari database atau sumber lain.
+
+Sumber:
+
+- [Unary plus (+) - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus)
+- [parseInt() - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt)
+- [Number() constructor - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/Number)
